@@ -4,7 +4,7 @@ import time
 
 outdir = '/home/eum/Desktop/MGS_DATA/'
 
-time_btwn_acq = 6
+time_btwn_acq = 60 * 10
 
 # Produce all the codes
 sta_acq = [0xAA, 0x00, 0x0A, 0x00, 0x00, 0xA4, 0x00, 0x00, 0x41]
