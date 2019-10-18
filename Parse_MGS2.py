@@ -113,6 +113,11 @@ out_arr = np.array(out_arr)
 shaper = out_arr.shape
 totener = np.zeros((shaper[0]))
 
+if (len(shaper) == 1):
+    out_arr = out_arr[None,:]
+
+shaper = out_arr.shape
+
 # Loop over data, compute energy and save to file
 for i in range(0, shaper[1]):
     energy = 10 + (i * 2.53)
