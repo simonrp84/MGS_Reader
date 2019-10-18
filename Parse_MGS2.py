@@ -82,7 +82,7 @@ for f in files:
         line = line.strip('\t\n\r')
         data = line.split(',')
         # First section is datetime
-        dtstr = data[0][11:11+8]
+        dtstr = data[0]
         # Second is the spectra
         data_m = data[1]
 
